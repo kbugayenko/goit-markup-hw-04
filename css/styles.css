@@ -24,6 +24,7 @@ body {
   color: var(--main-text-color);
   justify-content: center;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -38,10 +39,12 @@ p,
 ul {
   margin: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
 }
+
 .list {
   list-style: none;
   padding: 0;
@@ -220,6 +223,16 @@ img {
 .futuries > .item {
   flex-basis: calc(100% / 4);
   margin-left: var(--basic-margin);
+}
+.futuries > .item::before {
+  display: block;
+  content: "";
+  height: 80px;
+  background-image: url("../images/antenna.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-button);
 }
 
 .item:first-child {
