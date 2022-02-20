@@ -146,7 +146,7 @@ img {
   content: "";
   width: 12px;
   height: 12px;
-  background-image: url("../images/envelope\ \(hover\).svg");
+  background-image: url("../images/envelope-head.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
