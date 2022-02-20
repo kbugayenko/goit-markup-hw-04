@@ -140,15 +140,30 @@ img {
 .adress-nav-list:first-child {
   margin-left: 0;
 }
-/* .adress-nav-list:first-child > .link::before {
-  display: block;
+
+.adress-nav-list:first-child:before {
+  display: inline-flex;
   content: "";
+  width: 12px;
   height: 12px;
   background-image: url("../images/envelope\ \(hover\).svg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; */
+  background-position: center;
+  margin-right: 10px;
+}
 
+.adress-nav-list:last-child::before {
+  display: inline-flex;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/smartphone.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
 /* Hero */
 .overlay {
   max-width: 1600px;
@@ -164,11 +179,12 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-color: var(--background-color);
 }
 
 .hero-title {
@@ -400,6 +416,13 @@ img {
 
 .adress-nav .link.current {
   color: var(--button-color);
+}
+
+/* Section clients */
+.clients.list {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
 }
 
 /* Описание для Портфолио */
