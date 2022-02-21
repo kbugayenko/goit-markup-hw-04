@@ -10,6 +10,9 @@
   --background: #188ce8;
   --color-logo: #000000;
 
+  --icons-color: #afb1b8;
+  --icons-foot: rgba(255, 255, 255, 0.1);
+
   --padding-section: 94px;
   --basic-margin: 30px;
 }
@@ -357,28 +360,33 @@ img {
   color: var(--acent-color);
   justify-content: center;
 }
+
 .team-icons {
   display: flex;
-  padding: 0;
   list-style: none;
+  padding: 0;
+  justify-content: center;
+  align-content: center;
   outline: 1px solid red;
 }
 
 .btn-social {
+}
+
+.button-social {
+  display: block;
+  cursor: pointer;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   border: none;
-  color: var(--acent-color);
+  fill: var(--icons-color);
+  background-color: var(--background-button);
 }
-.button-social {
-  /* border: none;
-  width: 44px;
-  height: 44px;
-  color: var(--background-color);
-  border-radius: 50%;
-  background-color: #188ce8; */
+
+.soc-icons {
 }
+
 /* Footer */
 
 .footer {
