@@ -262,8 +262,16 @@ img {
   flex-basis: calc(100% / 4);
   margin-left: var(--basic-margin);
 }
-
-.futuries > .item::before {
+.futuries-icon {
+  background-color: var(--background-button);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.fut-icon {
+}
+/* .futuries > .item::before {
   display: block;
   content: "";
   height: 120px;
@@ -286,7 +294,7 @@ img {
 }
 .item:last-child::before {
   background-image: url("../images/astronaut.svg");
-}
+} */
 
 .item:first-child {
   margin-left: 0;
@@ -371,7 +379,20 @@ img {
   color: var(--acent-color);
   justify-content: center;
 }
-
+.team-icons {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  outline: 1px solid red;
+}
+.button-social {
+  border: none;
+  width: 44px;
+  height: 44px;
+  color: var(--background-color);
+  border-radius: 50%;
+  background-color: #188ce8;
+}
 /* Footer */
 
 .footer {
