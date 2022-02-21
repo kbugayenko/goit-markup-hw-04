@@ -269,32 +269,10 @@ img {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.fut-icon {
-}
-/* .futuries > .item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--background-button);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-.item:first-child::before {
-  background-image: url("../images/antenna.svg");
-}
 
-.item:nth-child(2)::before {
-  background-image: url("../images/clock.svg");
+.fut-icon {
+  display: block;
 }
-.item:nth-child(3)::before {
-  background-image: url("../images/diagram.svg");
-}
-.item:last-child::before {
-  background-image: url("../images/astronaut.svg");
-} */
 
 .item:first-child {
   margin-left: 0;
@@ -385,13 +363,21 @@ img {
   list-style: none;
   outline: 1px solid red;
 }
-.button-social {
+
+.btn-social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   border: none;
+  color: var(--acent-color);
+}
+.button-social {
+  /* border: none;
   width: 44px;
   height: 44px;
   color: var(--background-color);
   border-radius: 50%;
-  background-color: #188ce8;
+  background-color: #188ce8; */
 }
 /* Footer */
 
