@@ -137,37 +137,53 @@ img {
   display: flex;
 }
 .adress-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 50px;
+}
+.adress-nav-list:hover,
+.adress-nav-list:focus {
+  color: var(--button-color);
 }
 
 .adress-nav-list:first-child {
   margin-left: 0;
 }
 
-.adress-nav-list:first-child:before {
-  display: inline-flex;
-  content: "";
-  width: 12px;
-  height: 12px;
-  background-image: url("../images/envelope-head.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 10px;
+.adress-nav .link {
+  color: var(--acent-color);
 }
 
-.adress-nav-list:last-child::before {
-  display: inline-flex;
-  content: "";
-  width: 12px;
-  height: 12px;
-  background-image: url("../images/smartphone.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 10px;
+.link:hover,
+.link:focus {
+  color: var(--button-color);
 }
+
+.adress-nav .link.current {
+  color: var(--button-color);
+}
+
+.soc-icons.nav {
+  margin-right: 10px;
+  color: var(--acent-color);
+}
+
+/* .nav-envelope,
+.nav-tel {
+  display: inline-flex;
+  margin-right: 10px;
+  color: var(--acent-color);
+  cursor: pointer;
+} */
+
+.soc-icons.nav:hover,
+.soc-icons.nav:focus {
+  color: var(--button-color);
+}
+
 /* Hero */
+
 .overlay {
   max-width: 1600px;
   height: 600px;
@@ -266,15 +282,14 @@ img {
   margin-left: var(--basic-margin);
 }
 .futuries-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--background-button);
   width: 270px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.fut-icon {
-  display: block;
 }
 
 .item:first-child {
@@ -364,27 +379,36 @@ img {
 .team-icons {
   display: flex;
   list-style: none;
-  padding: 0;
+  padding: 0 32px;
   justify-content: center;
-  align-content: center;
-  outline: 1px solid red;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 16px;
 }
 
-.btn-social {
+.btn-icon:not(:last-child) {
+  margin-right: 10px;
 }
 
 .button-social {
-  display: block;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: none;
-  fill: var(--icons-color);
-  background-color: var(--background-button);
+  padding: 0;
+  color: var(--icons-color);
+}
+
+.button-social:hover,
+.button-social:focus {
+  color: var(--primary-white-color);
+  background-color: var(--button-color);
 }
 
 .soc-icons {
+  fill: currentColor;
 }
 
 /* Footer */
