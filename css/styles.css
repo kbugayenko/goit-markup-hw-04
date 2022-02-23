@@ -380,8 +380,6 @@ img {
   display: flex;
   list-style: none;
   padding: 0 32px;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   margin-top: 16px;
 }
@@ -409,6 +407,36 @@ img {
 
 .soc-icons {
   fill: currentColor;
+}
+
+/* Section clients */
+
+.clients.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-list {
+  display: inline-flex;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  padding: 6px 32px;
+}
+
+.clients-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item {
+  /* display: inline-flex;
+  padding: 6px 32px; */
+  color: var(--icons-color);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  color: var(--button-color);
 }
 
 /* Footer */
@@ -500,34 +528,6 @@ img {
 .footer-social:focus {
   color: var(--primary-white-color);
   background-color: var(--button-color);
-}
-
-/* Section clients */
-
-.clients.list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.clients-list {
-  border-radius: 4px;
-  border: 1px solid var(--icons-color);
-}
-
-.clients-list:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients-item {
-  display: inline-flex;
-  padding: 6px 32px;
-  color: var(--icons-color);
-}
-
-.clients-item:hover,
-.clients-item:focus {
-  color: var(--button-color);
 }
 
 /* Описание для Портфолио */
