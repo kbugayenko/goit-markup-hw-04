@@ -411,17 +411,17 @@ img {
 
 /* Section clients */
 
-.clients.list {
+.clients {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .clients-list {
-  display: inline-flex;
+  box-sizing: content-box;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
-  padding: 6px 32px;
+  padding: 16px 32px;
 }
 
 .clients-list:not(:last-child) {
@@ -429,8 +429,7 @@ img {
 }
 
 .clients-item {
-  /* display: inline-flex;
-  padding: 6px 32px; */
+  display: flex;
   color: var(--icons-color);
 }
 
