@@ -494,7 +494,8 @@ img {
 
   text-transform: uppercase;
 }
-
+.foot-adress {
+}
 .foot-social {
 }
 
@@ -505,7 +506,6 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-top: 16px;
 }
 
 .ftr-icon:not(:last-child) {
