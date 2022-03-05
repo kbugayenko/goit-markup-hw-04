@@ -159,6 +159,7 @@ ul {
 
 .nav-icons {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Hero */
@@ -446,20 +447,13 @@ ul {
 .footer-adress .link {
   color: rgba(255, 255, 255, 0.6);
 }
+
 .footer .logo-studio {
   color: var(--primary-white-color);
 }
 
-.adress-nav .link {
-  color: var(--acent-color);
-}
-
 .link:hover,
 .link:focus {
-  color: var(--button-color);
-}
-
-.adress-nav .link.current {
   color: var(--button-color);
 }
 
@@ -473,8 +467,9 @@ ul {
   color: var(--primary-white-color);
 }
 
-.foot-adress {
-  display: flex;
+.footer .container {
+  display: inline-flex;
+  align-items: baseline;
 }
 
 .foot-list:last-child {
