@@ -38,9 +38,9 @@ h1,
 h2,
 h3,
 h4,
-p,
-ul {
+p {
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -48,7 +48,7 @@ img {
   max-width: 100%;
 }
 
-.list {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -140,49 +140,35 @@ img {
 }
 
 .adress-nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 50px;
-}
-
-.adress-nav-list:hover,
-.adress-nav-list:focus {
-  color: var(--button-color);
 }
 
 .adress-nav-list:first-child {
   margin-left: 0;
 }
-
 .adress-nav .link {
+  display: flex;
+  align-items: center;
   color: var(--acent-color);
 }
 
-.link:hover,
-.link:focus {
+.adress-nav .link:hover,
+.adress-nav .link:focus {
   color: var(--button-color);
 }
 
-.adress-nav .link.current {
-  color: var(--button-color);
-}
-
-.soc-icons.nav {
+.nav-icons {
   margin-right: 10px;
-  color: var(--acent-color);
-}
-
-.soc-icons.nav:hover,
-.soc-icons.nav:focus {
-  color: var(--button-color);
 }
 
 /* Hero */
 
-.overlay {
+.hero {
+  background-color: var(--background-color);
+}
+
+.hero {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -196,10 +182,6 @@ img {
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.hero {
-  background-color: var(--background-color);
 }
 
 .hero-title {
@@ -374,8 +356,8 @@ img {
 
 .team-icons {
   display: flex;
+  justify-content: center;
   list-style: none;
-  padding: 0 32px;
   cursor: pointer;
   margin-top: 16px;
 }
@@ -409,15 +391,11 @@ img {
 
 .clients {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .clients-list {
-  box-sizing: content-box;
-  border: 1px solid var(--icons-color);
-  border-radius: 4px;
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
 }
 
 .clients-list:not(:last-child) {
@@ -426,23 +404,26 @@ img {
 
 .clients-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
   color: var(--icons-color);
 }
 
 .clients-item:hover,
 .clients-item:focus {
   color: var(--button-color);
+  border: 1px solid var(--button-color);
 }
 
 /* Footer */
 
 .footer {
-  color: var(--primary-white-color);
   background-color: var(--background-color);
-  margin-left: auto;
-  margin-right: auto;
   padding: 60px 0;
-  display: flex;
 }
 
 .footer-adress {
@@ -451,6 +432,7 @@ img {
   color: var(--primary-white-color);
   background-color: var(--background-color);
   margin-top: 20px;
+  align-items: baseline;
 }
 
 .footer-info {
@@ -487,9 +469,8 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-
   text-transform: uppercase;
-  padding-top: 12px;
+  color: var(--primary-white-color);
 }
 
 .foot-adress {
@@ -524,6 +505,7 @@ img {
   color: var(--primary-white-color);
   background-color: var(--icons-foot);
 }
+
 .footer-social:hover,
 .footer-social:focus {
   color: var(--primary-white-color);
@@ -560,9 +542,7 @@ img {
   border-radius: 4px;
   border: var(--background-button);
   padding: 6px 22px;
-}
-
-.button:last-child {
+  cursor: pointer;
 }
 
 .project .button:active {
@@ -578,10 +558,17 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.section-project .link {
+.project-link {
+  display: block;
   color: var(--main-text-color);
+  text-decoration: none;
 }
 
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .section-project {
   display: flex;
   flex-wrap: wrap;
@@ -610,38 +597,8 @@ img {
   color: var(--acent-color);
 }
 
-.project-tehno,
-.project-poster,
-.project-seafood,
-.project-prime,
-.project-boxes,
-.project-borders,
-.project-limit,
-.project-lab,
-.project-business {
+.project-item {
   flex-basis: calc(100% / 3 - var(--basic-margin));
   margin-left: var(--basic-margin);
   margin-top: var(--basic-margin);
-}
-
-.project-tehno:hover,
-.project-tehno:focus,
-.project-poster:hover,
-.project-poster:focus,
-.project-seafood:hover,
-.project-seafood:focus,
-.project-prime:hover,
-.project-prime:focus,
-.project-boxes:hover,
-.project-boxes:focus,
-.project-borders:hover,
-.project-borders:focus,
-.project-limit:hover,
-.project-limit:focus,
-.project-lab:hover,
-.project-lab:focus,
-.project-business:hover,
-.project-business:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
